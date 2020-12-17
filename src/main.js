@@ -4,4 +4,8 @@ import router from './router'
 import store from './store'
 import ElementPlus from './plugins/element.js'
 
-createApp(App).use(router).use(store).use(ElementPlus).mount('#app')
+createApp(App)
+    .use(router)
+    .use(store)
+    .use(ElementPlus)
+    .mount('#app');
