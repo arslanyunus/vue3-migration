@@ -4,7 +4,7 @@
 
         <p><b>message:</b> {{message}}</p>
         <p><b>title:</b> {{title}}</p>
-        <HomeContent v-model="message" :title.sync="title"/>
+        <HomeContent v-model="message" v-model:title="title"/>
     </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
             this.message = message;
         });
     },
-    beforeDestroy() {
+    beforeUnmount() {
         EventBus.bus.$off('setMessage');
     },
 };

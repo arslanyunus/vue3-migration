@@ -3,7 +3,7 @@
         <h1>This is an about page</h1>
 
         <p>raw value: {{ value }}</p>
-        <p>parseInt: {{ value | parseInt }}</p>
+        <p>parseInt: {{ parseInt(value) }}</p>
     </div>
 </template>
 
@@ -11,10 +11,10 @@
 
     export default {
         name: 'About',
-        filters: {
+        methods: {
             parseInt(val) {
                 return parseInt(val)
-            }
+            },
         },
         data() {
             return {
