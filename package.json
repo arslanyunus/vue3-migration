@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-plus": "^1.0.1-alpha.19",
     "vue": "^3.0.0-beta.1",
     "vue-router": "^4.0.0-alpha.6",
     "vuex": "^4.0.0-alpha.1"
@@ -25,9 +26,10 @@
     "eslint-plugin-vue": "^7.0.0-alpha.0",
     "lint-staged": "^9.5.0",
     "node-sass": "^4.9.2",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
-    "vue-cli-plugin-element": "latest"
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.4",
+    "vue-cli-plugin-element": "latest",
+    "vue-cli-plugin-element-plus": "~0.0.8"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
