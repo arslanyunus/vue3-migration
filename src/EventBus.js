@@ -1,5 +1,8 @@
-import Vue from 'vue';
+import mitt from 'mitt';
 
-export const bus = new Vue();
+const bus = mitt();
+bus.$on = bus.on;
+bus.$off = bus.off;
+bus.$emit = bus.emit;
 
 export default { bus };
